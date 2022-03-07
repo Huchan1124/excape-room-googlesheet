@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六角西餐廳 | 表單</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css'
+        integrity='sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=='
+        crossorigin='anonymous' />
+</head>
+<style>
+    @media (min-width:769px) {
+        .wrapper {
+            width: 834px;
+        }
+    }
+</style>
+
+<body>
+    <div class="container wrapper  py-4 px-3">
+        <h2 class="text-center mb-4 fw-bold ">六角西餐廳</h2>
+        <form
+            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfxOGe402He0UGw6LPFNw7A9f9NG30RCxhRpWfnh0-AVe3UTg/formResponse"
+            method="POST">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="nameInput" class="fw-bold form-label">姓名</label>
+                        <input type="text" name="entry.42904945" class="form-control" id="nameInput" placeholder="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="telInput" class="fw-bold form-label">電話</label>
+                        <input type="tel" name="entry.1266269731" class="form-control" id="telInput" placeholder="">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="mb-3">
+                        <label for="dateInput" class="fw-bold form-label">日期</label>
+                        <input type="date" class="form-control" name="entry.760995042" id="dateInput" placeholder="">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="mb-3">
+                        <label for="qtyInput" class="fw-bold form-label">用餐人數</label>
+                        <select class="form-select" name="entry.1852690350" id="qtyInput"
+                            aria-label="Default select example">
+                            <option disabled>用餐人數</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="mb-3">
+                        <h6 class="fw-bold">其他項目</h6>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="entry.1447414830" value="需要兒童座椅"
+                                id="needChildSeat">
+                            <label class="form-check-label" for="needChildSeat">
+                                需要兒童座椅
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="entry.1447414830" value="素食餐點"
+                                id="needVegetarianMeal">
+                            <label class="form-check-label" for="needVegetarianMeal">
+                                素食餐點
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="entry.1447414830" value="吸菸區"
+                                id="needSmokeArea">
+                            <label class="form-check-label" for="needSmokeArea">
+                                吸菸區
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="mb-3">
+                        <button type="submit" class="w-100 btn btn-dark">
+                            送出
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+    <script>
+
+        // document.querySelector('#dateInput').addEventListener('change', () => {
+        //     const newDate = new Date(document.querySelector('#dateInput').value);
+        //     const year = new Date(document.querySelector('#dateInput').value).getFullYear();
+        //     const month = newDate.getMonth() + 1;
+        //     const day = newDate.getDate();
+
+        //     console.log(year,month,day)
+
+        //     document.getElementsByName('entry.760995042_year').value = year;
+        //     document.getElementsByName('entry.760995042_month').value = month;
+        //     document.getElementsByName('entry.760995042_day').value = day;
+        // })
+
+    </script>
+
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.min.js'
+        integrity='sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=='
+        crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.9.1/axios.min.js'
+        integrity='sha512-Xk3wWei2TGrsh9kDSBKUMIjw/86sLUvhtnv9f7fOuIwhhiUTKz8szkWkzHthrM5Bb3Bu9idSzkxOrkzhcneuiw=='
+        crossorigin='anonymous'></script>
+</body>
+
+</html>
